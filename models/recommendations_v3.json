@@ -1,0 +1,38 @@
+{
+  "(UP, coal)": {
+    "action": "Switch coal boilers to natural gas or biomass",
+    "saving": "15-25%",
+    "priority": "HIGH",
+    "timeline": "6-12 months"
+  },
+  "(UP, oil)": {
+    "action": "Optimise combustion + explore HFO alternatives",
+    "saving": "10-18%",
+    "priority": "HIGH",
+    "timeline": "3-6 months"
+  },
+  "(UP, gas)": {
+    "action": "Install heat recovery + audit gas leaks",
+    "saving": "8-15%",
+    "priority": "MEDIUM",
+    "timeline": "3-6 months"
+  },
+  "(UP, electricity)": {
+    "action": "Install solar PV + energy-efficient equipment",
+    "saving": "20-35%",
+    "priority": "HIGH",
+    "timeline": "6-18 months"
+  },
+  "(DOWN, coal)": {
+    "action": "Accelerate coal-to-gas transition \u2014 on track",
+    "saving": "5-15%",
+    "priority": "MEDIUM",
+    "timeline": "12-24 months"
+  },
+  "(DOWN, any)": {
+    "action": "Continue current strategy \u2014 emissions trending down",
+    "saving": "Maintain",
+    "priority": "LOW",
+    "timeline": "Ongoing"
+  }
+}

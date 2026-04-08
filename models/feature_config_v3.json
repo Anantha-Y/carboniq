@@ -1,0 +1,63 @@
+{
+  "bilstm_features": [
+    "coal_co2_mt",
+    "oil_co2_mt",
+    "gas_co2_mt",
+    "cement_co2_mt",
+    "primary_energy_twh",
+    "coal_share_pct",
+    "oil_share_pct",
+    "gas_share_pct",
+    "coal_ratio",
+    "energy_intensity",
+    "co2_per_capita",
+    "co2_per_gdp",
+    "year"
+  ],
+  "anomaly_features": [
+    "total_co2_mt",
+    "co2_yoy_change_pct",
+    "co2_lag_1yr",
+    "co2_rolling_3yr",
+    "coal_co2_mt",
+    "oil_co2_mt",
+    "gas_co2_mt",
+    "primary_energy_twh",
+    "co2_vs_lag_ratio",
+    "co2_vs_3yr_ratio",
+    "abs_yoy_change"
+  ],
+  "classifier_features": [
+    "co2_yoy_change_pct",
+    "co2_lag_1yr",
+    "co2_lag_2yr",
+    "co2_rolling_3yr",
+    "co2_rolling_5yr",
+    "coal_share_pct",
+    "oil_share_pct",
+    "gas_share_pct",
+    "coal_ratio",
+    "energy_intensity",
+    "co2_per_capita",
+    "co2_per_gdp",
+    "co2_vs_lag_ratio",
+    "co2_vs_3yr_ratio",
+    "abs_yoy_change",
+    "year",
+    "decade"
+  ],
+  "seq_len": 5,
+  "train_cutoff": 2015,
+  "version": "v3",
+  "changes_from_v2": [
+    "bilstm_replaces_xgboost",
+    "temporal_train_test_split",
+    "winsorization_removed",
+    "anomaly_cells_consolidated",
+    "threshold_on_held_out_val",
+    "real_world_anomaly_validation",
+    "direction_label_replaces_trivial_classifier",
+    "full_mape_suite",
+    "eda_section_added"
+  ]
+}
